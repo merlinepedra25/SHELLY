@@ -62,27 +62,27 @@ function main(){
 }
 
 if [ ! -z $int ]; then
-    sleep 0.5
+	sleep 0.5
 else
 	banner
-  main
-  exit 0
+	main
+ 	exit 0
 fi
 
 if [ ! -z $lp ]; then
-    sleep 0.5
+    	sleep 0.5
 else
 	banner
-  main
-  exit 0
+  	main
+  	exit 0
 fi
 
 if [ ! -z $def ]; then
-    sleep 0.5
+    	sleep 0.5
 else
-  banner
-  main
-  exit 0
+  	banner
+  	main
+  	exit 0
 fi
 
 function bash(){
@@ -235,8 +235,8 @@ function ruby(){
 }
 
 function start(){
-  	if [ "$def" == "bash" ] || [ "$def" == "Bash" ]; then
-	  bash
+	if [ "$def" == "bash" ] || [ "$def" == "Bash" ]; then
+		bash
 	elif [ "$def" == "netcat" ] || [ "$def" == "Netcat" ]; then
 		netcat
 	elif [ "$def" == "php" ] || [ "$def" == "Php" ]; then
