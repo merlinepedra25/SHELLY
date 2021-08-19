@@ -235,7 +235,7 @@ function ruby(){
 }
 
 function start(){
-  if [ "$def" == "bash" ] || [ "$def" == "Bash" ]; then
+  	if [ "$def" == "bash" ] || [ "$def" == "Bash" ]; then
 	  bash
 	elif [ "$def" == "netcat" ] || [ "$def" == "Netcat" ]; then
 		netcat
