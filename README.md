@@ -11,6 +11,8 @@
 root@kali:~# Shelly eth0 443 bash
 ```
 
+![](/2.png)
+
 **Download / Install**
 ```cmd
 root@kali:~# wget "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/Shelly.sh" -O /opt/Shelly.sh
@@ -23,11 +25,5 @@ root@kali:~# chmod +x /opt/Shelly.sh
 - Powerlevel --> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.p10k.zsh`
 
 (Close terminal and reopen again)
-
----
-
-**Screenshot**
-
-![](/2.png)
 
 ---
