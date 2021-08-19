@@ -23,9 +23,9 @@ root@kali:~# chmod +x /opt/Shelly.sh
 
 * Add Alias
 
- * Bash --------> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.bashrc`
- * Zsh ---------> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.zshrc`
- * Powerlevel --> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.p10k.zsh`
+  * Bash --------> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.bashrc`
+  * Zsh ---------> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.zshrc`
+  * Powerlevel --> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.p10k.zsh`
 
 (Close terminal and reopen again)
 
