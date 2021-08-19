@@ -52,7 +52,7 @@ function banner(){
 	echo -e "$CyanLight  /        \|   Y  \  ___/|  |_|  |_\___  | $End";
 	echo -e "$CyanLight /_______  /|___|  /\___  >____/____/ ____| $End";
 	echo -e "$CyanLight         \/      \/     \/          \/      $End";
-	echo -e "$GreenLight     $f29								   $End";
+	echo -e "$GreenLight     $f29                                  $End";
 	echo -e "$White$f26                                            $End";
 }
 
