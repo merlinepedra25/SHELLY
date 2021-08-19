@@ -25,3 +25,11 @@ root@kali:~# chmod +x /opt/Shelly.sh
 (Close terminal and reopen again)
 
 ---
+
+**Screenshot**
+
+![](/2.png)
+
+![](/3.png)
+
+---
