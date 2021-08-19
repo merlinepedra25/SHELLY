@@ -7,12 +7,18 @@
 ---
 
 **Run**
+
+`eth0`
 ```cmd
 root@kali:~# Shelly eth0 443 bash
 ```
+
+`tun0`
 ```cmd
 root@kali:~# Shelly tun0 443 bash
 ```
+
+`enp0s3`
 ```cmd
 root@kali:~# Shelly enp0s3 443 bash
 ```
