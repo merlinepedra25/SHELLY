@@ -30,6 +30,4 @@ root@kali:~# chmod +x /opt/Shelly.sh
 
 ![](/2.png)
 
-![](/3.png)
-
 ---
