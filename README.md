@@ -31,21 +31,21 @@ root@kali:~# chmod +x /opt/Shelly.sh
 
 ---
 
-**Available Languages**
+* Available Languages**
 
-* Bash
-* Netcat
-* PHP
-* Ncat
-* Python
-* Python3
-* Perl
-* Telnet
-* PowerShell
-* Awk
-* Socat
-* Ruby
-* Xterm
-* Gawk
+  * Bash
+  * Netcat
+  * PHP
+  * Ncat
+  * Python
+  * Python3
+  * Perl
+  * Telnet
+  * PowerShell
+  * Awk
+  * Socat
+  * Ruby
+  * Xterm
+  * Gawk
 
 ---
