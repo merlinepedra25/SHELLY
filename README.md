@@ -1,6 +1,6 @@
 # Shelly
 
-**Automatic tool in `bash` to create `reverse shell`**
+**Automatic tool in `bash` to create `reverse shell` from `CLI`**
 
 ![](/1.png)
 
