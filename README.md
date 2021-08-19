@@ -8,6 +8,8 @@
 
 * Run
 
+Tested Interfaces: `eth0` - `tun0` - `enp0s3`
+
 ```cmd
 root@kali:~# Shelly eth0 443 bash
 ```
