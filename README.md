@@ -11,7 +11,7 @@
 root@kali:~# Shelly eth0 443 bash
 ```
 
-![](/2.png)
+![](/01.png)
 
 **Download / Install**
 ```cmd
