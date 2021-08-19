@@ -2,7 +2,7 @@
 
 **Automatic tool in `bash` to create `reverse shell` from `CLI`**
 
-![](/1.png)
+![](/001.png)
 
 ---
 
@@ -11,7 +11,7 @@
 root@kali:~# Shelly eth0 443 bash
 ```
 
-![](/01.png)
+![](/002.png)
 
 **Download / Install**
 ```cmd
