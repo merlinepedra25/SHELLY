@@ -4,8 +4,6 @@
 
 ![](/001.png)
 
----
-
 * Run
 
 Tested Interfaces: `eth0` - `tun0` - `enp0s3`
@@ -30,8 +28,6 @@ root@kali:~# chmod +x /opt/Shelly.sh
   * Powerlevel --> `root@kali:~# echo "alias Shelly='/opt/Shelly.sh'" >> /root/.p10k.zsh`
 
 (Close terminal and reopen again)
-
----
 
 * Available Languages
 
