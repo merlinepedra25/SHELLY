@@ -291,11 +291,11 @@ function start(){
 		xterm
 		echo ""
 		echo -e "$White$f26$End"
-    else
+    	else
  		banner
     		main
     		exit 0
-    fi
+    	fi
 }
 
 start
