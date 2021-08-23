@@ -2,7 +2,7 @@
 
 **Automatic tool in `bash` to create `reverse shell` from `CLI`**
 
-![](/001.png)
+![](/screenshot1.png)
 
 * Run
 
@@ -12,7 +12,7 @@ Tested Interfaces: `eth0` - `tun0` - `enp0s3`
 root@kali:~# shelly eth0 443 bash
 ```
 
-![](/002.png)
+![](/screenshot2.png)
 
 * Download / Install
 
