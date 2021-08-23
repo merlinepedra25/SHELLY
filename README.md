@@ -18,7 +18,7 @@ root@kali:~# shelly eth0 443 bash
 
 ```cmd
 root@kali:~# wget "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.sh" -O /opt/shelly.sh
-root@kali:~# chmod +x /opt/Shelly.sh
+root@kali:~# chmod +x /opt/shelly.sh
 ```
 
 * Add Alias
