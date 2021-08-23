@@ -59,7 +59,7 @@ function banner(){
 function main(){
 	echo ""
 	echo -e "$White$f1$RedLight$f6$White$f2$GreenLight Author:$RedLight   d4t4s3c$End"
-   	echo -e "$White$f1$YellowLight$f3$White$f2$GreenLight Example:$YellowLight  Shelly $White$f4$RedLight$f10$White$f5 $White$f4$RedLight$f11$White$f5$End $White$f4$RedLight$f9$White$f5$End"
+   	echo -e "$White$f1$YellowLight$f3$White$f2$GreenLight Example:$YellowLight  shelly $RedLight$f4$White$f10$RedLight$f5 $RedLight$f4$White$f11$RedLight$f5 $RedLight$f4$White$f9$RedLight$f5$End"
     	echo ""
 }
 
@@ -255,7 +255,7 @@ function start(){
 		ncat
 		echo ""
 		echo -e "$White$f26$End"
-	elif [ "$def" == "python" ] || [ "$def" == "Python" ]; then
+	elif [ "$def" == "python" ] || [ "$def" == "Python" ] || [ "$def" == "python3" ] || [ "$def" == "Python3" ]; then
 		python
 		echo ""
 		echo -e "$White$f26$End"
