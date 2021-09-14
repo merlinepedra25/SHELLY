@@ -41,7 +41,7 @@ declare -r f29='Automatic Reverse Shell Generator'
 declare -r int="$1"
 declare -r lp="$2"
 declare -r def="$3"
-declare -r lh=$(ip -4 address show $int | grep 'inet' | awk '{print $2}' | cut -d/ -f 1)
+declare -r lh=$(/usr/bin/ip -4 address show $int | grep 'inet' | awk '{print $2}' | cut -d/ -f 1)
 
 function banner(){
 	echo ""	
