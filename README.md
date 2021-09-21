@@ -17,8 +17,6 @@ root@kali:~# wget "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.
 root@kali:~# chmod +x /opt/shelly.sh
 ```
 
-> Tested Interfaces: `eth0` - `tun0` - `enp0s3`
-
 * Add Alias
 
   * Bash --------> `root@kali:~# echo "alias shelly='/opt/shelly.sh'" >> /root/.bashrc`
@@ -43,5 +41,7 @@ root@kali:~# chmod +x /opt/shelly.sh
   * Ruby
   * Xterm
   * Gawk
+
+> Tested Interfaces: `eth0` - `tun0` - `enp0s3`
 
 ---
