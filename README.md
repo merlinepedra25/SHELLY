@@ -4,8 +4,6 @@
 
 * Run
 
-Tested Interfaces: `eth0` - `tun0` - `enp0s3`
-
 ```cmd
 root@kali:~# shelly eth0 443 bash
 ```
@@ -18,6 +16,8 @@ root@kali:~# shelly eth0 443 bash
 root@kali:~# wget "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.sh" -O /opt/shelly.sh
 root@kali:~# chmod +x /opt/shelly.sh
 ```
+
+> Tested Interfaces: `eth0` - `tun0` - `enp0s3`
 
 * Add Alias
 
