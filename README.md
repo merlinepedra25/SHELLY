@@ -1,6 +1,4 @@
-# Shelly
-
-**Automatic `Reverse Shell` Generator**
+# Shelly - Automatic `Reverse Shell` Generator
 
 ![](/screenshot1.png)
 
