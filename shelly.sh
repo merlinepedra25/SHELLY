@@ -81,7 +81,7 @@ else
 fi
 
 if [ ! -z $def ]; then
-    	sleep 0.5
+    	:
 else
 	banner
     	main
