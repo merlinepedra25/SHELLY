@@ -1,33 +1,27 @@
-# Shelly - Automatic `Reverse Shell` Generator
+# Shelly
 
-![](/screenshot1.png)
+**Automatic `Reverse Shell` Generator**
 
-Tested Interfaces: `eth0` - `tun0` - `enp0s3`
+![](/1.png)
 
-* Run
+Tested Interfaces: <kbd>eth0</kbd> - <kbd>tun0</kbd> - <kbd>enp0s3</kbd>
+
+- <kbd>Use</kbd>
 
 ```cmd
 root@kali:~# shelly eth0 443 bash
 ```
 
-![](/screenshot2.png)
+![](/2.png)
 
-* Download / Install
+- <kbd>Download / Install</kbd>
 
 ```cmd
-root@kali:~# wget "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.sh" -O /opt/shelly.sh
-root@kali:~# chmod +x /opt/shelly.sh
+root@kali:~# wget -q "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.sh" -O /usr/bin/shelly
+root@kali:~# chmod +x /usr/bin/shelly
 ```
 
-* Add Alias
-
-  * Bash --------> `root@kali:~# echo "alias shelly='/opt/shelly.sh'" >> /root/.bashrc`
-  * Zsh ---------> `root@kali:~# echo "alias shelly='/opt/shelly.sh'" >> /root/.zshrc`
-  * Powerlevel --> `root@kali:~# echo "alias shelly='/opt/shelly.sh'" >> /root/.p10k.zsh`
-
-(Close terminal and reopen again)
-
-* Available Languages
+- <kbd>Available Languages</kbd>
 
   * Bash
   * Netcat
