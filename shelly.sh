@@ -262,8 +262,8 @@ function start(){
 		xterm
     	else
  		banner
-    	main
-    	exit 0
+    		main
+    		exit 0
     	fi
 }
 
