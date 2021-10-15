@@ -65,7 +65,7 @@ function main(){
 }
 
 if [ ! -z $int ]; then
-		:
+	:
 else
 	banner
     	main
@@ -73,7 +73,7 @@ else
 fi
 
 if [ ! -z $lp ]; then
-		:
+	:
 else
 	banner
     	main
