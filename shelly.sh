@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#colors
 declare -r White="\e[97m"
 declare -r RedLight="\e[91m"
 declare -r GreenLight="\e[92m"
@@ -8,7 +7,6 @@ declare -r YellowLight="\e[93m"
 declare -r CyanLight="\e[96m"
 declare -r End="\e[0m"
 
-#var
 declare -r f1='['
 declare -r f2=']'
 declare -r f3='i'
@@ -141,7 +139,6 @@ function ncat(){
 	echo -e "\tncat $lh $lp -e /bin/sh"
 	echo ""
 }
-
 
 function xterm(){
 	echo ""
