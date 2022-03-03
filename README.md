@@ -1,16 +1,8 @@
 # Shelly
 
-**Automatic `Reverse Shell` Generator**
+**Automatic Reverse Shell Generator**
 
-![](/1.png)
-
-- <kbd>Use</kbd>
-
-```cmd
-root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
-```
-
-![](/2.png)
+![](/01.png)
 
 - <kbd>Download / Install</kbd>
 
@@ -18,6 +10,14 @@ root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
 root@kali:~# wget -q "https://raw.githubusercontent.com/d4t4s3c/Shelly/main/shelly.sh" -O /usr/bin/shelly
 root@kali:~# chmod +x /usr/bin/shelly
 ```
+
+- <kbd>Use</kbd>
+
+```cmd
+root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
+```
+
+![](/02.png)
 
 - <kbd>Available Languages</kbd>
 
