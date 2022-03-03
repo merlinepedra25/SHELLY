@@ -4,12 +4,10 @@
 
 ![](/1.png)
 
-Tested Interfaces: <kbd>eth0</kbd> - <kbd>tun0</kbd> - <kbd>enp0s3</kbd>
-
 - <kbd>Use</kbd>
 
 ```cmd
-root@kali:~# shelly eth0 443 bash
+root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
 ```
 
 ![](/2.png)
