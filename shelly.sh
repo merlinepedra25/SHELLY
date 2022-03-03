@@ -45,8 +45,8 @@ declare -r f35='[!]'
 declare -r f36='[*]'
 
 function banner(){
-	echo ""	
-	echo -e "$CyanLight   _________.__           .__  .__         $End"
+    echo ""	
+    echo -e "$CyanLight   _________.__           .__  .__         $End"
 	echo -e "$CyanLight  /   _____/|  |__   ____ |  | |  | ___.__.$End"
 	echo -e "$CyanLight  \_____  \ |  |  \_/ __ \|  | |  |<   |  |$End"
 	echo -e "$CyanLight  /        \|   Y  \  ___/|  |_|  |_\___  |$End"
