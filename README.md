@@ -2,7 +2,7 @@
 
 **Automatic Reverse Shell Generator**
 
-![](/01.png)
+![](/03.png)
 
 - <kbd>Download / Install</kbd>
 
