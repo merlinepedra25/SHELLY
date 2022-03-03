@@ -19,6 +19,8 @@ root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
 
 ![](/01.png)
 
+![](/05.png)
+
 ![](/02.png)
 
 - <kbd>Available Languages</kbd>
