@@ -4,8 +4,6 @@
 
 ![](/01.png)
 
-![](/02.png)
-
 - <kbd>Download / Install</kbd>
 
 ```cmd
