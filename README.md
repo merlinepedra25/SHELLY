@@ -17,6 +17,8 @@ root@kali:~# chmod +x /usr/bin/shelly
 root@kali:~# shelly -h <LHOST> -p <LPORT> -l <LANGUAGE>
 ```
 
+![](/01.png)
+
 ![](/02.png)
 
 - <kbd>Available Languages</kbd>
